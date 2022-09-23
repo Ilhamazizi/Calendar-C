@@ -11,7 +11,7 @@ int get_1st_weekday(int year) {
 
 int main() {
 
-   system("Color 3F");
+   system("Color 3F"); 
    int year, month, day, daysInMonth, weekDay = 0, startingDay;
    printf("\n Pilih Tahun : ");
    scanf("%d", & year);
@@ -25,7 +25,7 @@ int main() {
 
    startingDay = get_1st_weekday(year);
 
-   for(month=0; month < 12; month++){
+   for(month=0; month < 12; month++) {
 
       daysInMonth = monthDay[month];
       printf("\n \n---------------%s-------------------\n", months[month]);
