@@ -16,9 +16,8 @@ int main() {
    printf("\n Pilih Tahun : ");
    scanf("%d", & year);
 
-   char *months[]={"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}; // 1 Tahun 12 Bulan
-
-   int monthDay[]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Jumlah tanggal dalam sebulan
+   char *months[]= {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}; // 1 Tahun 12 Bulan
+   int monthDay[]= {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // Jumlah tanggal dalam sebulan
 
    if((year % 4 == 0 && year % 100!= 0)||year % 400 == 0)
        monthDay[1] = 29;
